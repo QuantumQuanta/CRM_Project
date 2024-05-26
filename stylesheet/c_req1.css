@@ -1,0 +1,53 @@
+/* Style for form container */
+#respRequestForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for form rows */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for labels */
+.CREQlbl {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for text inputs, select, and textarea */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style for submit button */
+#subBtnCREQ {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#subBtnCREQ:hover {
+    background-color: #45a049;
+}

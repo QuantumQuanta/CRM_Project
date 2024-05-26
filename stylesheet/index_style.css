@@ -1,0 +1,93 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.95);
+    animation: backgroundColorChange 10s infinite;
+    transition: background 1s;
+    color: #333;
+    position: relative;
+}
+
+@keyframes backgroundColorChange {
+    0% { background-color: rgba(255, 255, 255, 0.95); }
+    50% { background-color: rgba(255, 255, 255, 0.96); }
+    100% { background-color: rgba(255, 255, 255, 0.95); }
+}
+
+.loading-overlay {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(90deg, #3498db, #e74c3c, #2ecc71);
+    background-size: 200% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    animation: fill 2s linear infinite;
+    transition: opacity 0.5s;
+}
+
+@keyframes fill {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #fff;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.opening-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    z-index: 1001;
+}
+
+.logo {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.7; /* Adjust opacity as needed */
+}
+
+.slogan {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}

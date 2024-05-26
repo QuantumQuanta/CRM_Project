@@ -1,0 +1,56 @@
+.navbar {
+  height: 3.1%;
+  padding-top: 20px;
+  /* background-image: linear-gradient(to right,#1f2f98, #ffffff ); */
+  /* background-image:linear-gradient(70deg, rgba(2,0,36,1),rgb(76, 76, 163)35%,  rgb(46, 196, 226) 100%); */
+  background-image: linear-gradient(70deg, rgba(2, 0, 36, 0.854),rgba(227, 94, 74, 0.689)35%, rgba(93, 198, 84, 0.37) 100%);
+  padding-left: 0.3%;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #666;
+  margin: auto;
+  opacity: 0.9;
+  color: #fff;
+}
+
+#nav_content_nl {
+  display: flex;
+  margin-top: -16px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  height: 32px;
+}
+
+#nav_content_l {
+  display: flex;
+  margin-top: -25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#navbar_oms {
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+  padding-right: 11px;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(164, 151, 253);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: rgb(140, 140, 146); */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #31328e;
+}

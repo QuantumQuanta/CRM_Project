@@ -1,0 +1,110 @@
+  .box {
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .box h2 {
+    color: #151414;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .box ul {
+    position: relative;
+    background: #cbefff;
+    max-height: 20vh;
+    overflow-y: scroll;
+    max-width: 90%;
+  }
+
+  .box ul:hover li {
+    opacity: 0.2;
+  }
+
+  .box ul li {
+    list-style: none;
+    padding: 5px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+  }
+
+  .box ul li:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    background: #25bcff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 1;
+  }
+
+  .box ul li span {
+    width: 20px;
+    height: 0px;
+    text-align: center;
+    line-height: 20px;
+    background: #ffffff;
+    color: #000000;
+    display: inline list-item;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+  }
+
+  .box ul li:hover span {
+    background: #25bcff;
+    color: #000000;
+  }
+
+
+/*Edit button  CSS */
+.cReqEditBtn {
+  background-color: #03a9f4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 0px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.cReqEditBtn:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.cReqEditBtn:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+  color: #03a9f4;
+}
+
+.cReqEditBtn:disabled {
+  border-color: #DDDDDD;
+  color: #000000;
+  cursor: not-allowed;
+  opacity: 1;
+}

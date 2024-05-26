@@ -1,0 +1,479 @@
+/* table div design css */
+.data-content {
+  width: 98%;
+  height: 70%;
+  padding-bottom: 100px;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* previous button css */
+.container-fluid {
+  margin-top: 15px;
+  margin-left: 13px;
+  margin-bottom: -12px;
+  gap: 10px;
+  display: flex;
+}
+
+.client_col1 {
+  /* float: left;
+  width: 40%; */
+}
+
+.client_col2 {
+  /* float: left;
+  width: 60%; */
+  /* justify-content: center;
+  text-align: center; */
+  font-size: 15px;
+  font-style: revert;
+  font-weight: unset;
+}
+
+/* Clear floats after the columns */
+.container-fluid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#backBtn {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #2f82db;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  width: 101px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 5px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: bolder;
+}
+
+#backBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+#backBtn span::before {
+  content: "\00ab";
+  position: absolute;
+  opacity: 0;
+  top: -7px;
+  left: -20px;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+#backBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#backBtn:hover span {
+  padding-left: 25px;
+}
+
+#backBtn:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+/* table design css*/
+.container {
+  height: 75vh;
+  font-size: 10px;
+  box-shadow: 10px 10px 5px rgb(141, 154, 158);
+  width: 97%;
+  margin: auto;
+  overflow: auto;
+}
+
+.container table {
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+  word-wrap: break-word;
+  line-height: 1rem;
+
+}
+
+.container td,
+.container th {
+  border: .5px solid rgb(244, 237, 237);
+  text-align: center;
+}
+
+.container td {
+  background: #bfd6ef;
+  padding: 5px 5px !important;
+}
+
+.container th {
+  position: sticky;
+  top: 0;
+  background: #3f51a5ed !important;
+  color: white;
+  width: 57px;
+  border-right: 1.5px solid rgb(255, 255, 255);
+  padding: 10px 5px !important;
+}
+
+#pro_kyc,
+#pro_PCR_et,
+#pro_callSt {
+  width: 38px !important;
+}
+
+#pro_callTy,
+#pro_clientST1,
+#pro_clientST2 {
+  width: 100px !important;
+}
+
+#Comment_1,
+#Comment_2 {
+  width: 300px !important;
+}
+
+#pro_PCRresp1,
+#pro_PCR_pt1,
+#pro_rat1,
+#pro_PCRresp2,
+#pro_PCR_pt2,
+#pro_PCR_prc,
+#pro_rat2 {
+  width: 45px !important;
+}
+
+.call_type,
+.comment_1,
+.client_stat_1,
+.comment_2,
+.client_stat_2 {
+  text-align: left !important;
+}
+
+/* design for scroll bar */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(164, 151, 253);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #31328e;
+}
+
+::placeholder {
+  color: white;
+}
+
+::-moz-focus-outer {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+/* form design css */
+.container-form {
+  width: 60%;
+  /* height: auto; */
+  height: 60vh;
+  overflow: auto;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 1%;
+  /* margin-bottom: 20px; */
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, #5596e6, #b3d1f3);
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+  color: white;
+  animation: slideUp 1s ease-in-out;
+  border-radius: 20px !important;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#form-heading {
+  margin: auto;
+  text-align: center;
+  font-size: 21px;
+  color: white;
+  word-spacing: 0px;
+  letter-spacing: 3px;
+  padding-bottom: 9px;
+  animation: slideUp 1s ease-in-out;
+  text-shadow: 1px 5px 5px #0E228E;
+}
+
+.container-form .formDiv {
+  margin-left: 51px;
+}
+
+
+input,
+textarea,
+select,
+textarea {
+  width: 54%;
+  padding: 5px;
+  resize: vertical;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(246, 243, 243);
+  color: white;
+}
+
+
+
+option {
+  color: rgb(11, 10, 10);
+}
+
+textarea {
+  width: 78.5%;
+}
+
+label {
+  color: white;
+}
+
+.container-row,
+.container-col50,
+.container-col30,
+.container-row2 {
+  display: flex;
+}
+
+.container-row,
+.container-row2 {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.container-col50,
+.container-col30,
+.container-col50 input {
+  width: 50%;
+}
+
+.container-col50 label,
+.container-col30 label {
+  width: 32%;
+}
+
+.container-col50 select {
+  width: 58.5%;
+}
+
+.container-col30 input {
+  width: 49.9%;
+}
+
+.container-row2 label {
+  width: 16%;
+}
+
+.container-row2 select {
+  width: 79.3%;
+}
+
+.container-row2 input {
+  width: 77.9%;
+}
+
+#saveChangeBtn {
+  width: 40%;
+  margin: auto;
+  border: none;
+}
+
+#submit_pro_input {
+  border: none;
+  border-radius: 20px;
+}
+
+.container-form .formDiv button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 5%;
+  margin-left: 15%;
+  letter-spacing: 4px;
+  font-weight: bold;
+  background: #00000063;
+}
+
+.container-form button:hover {
+  background: #038f97;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.visitor-log {
+  display: inline-flex;
+  background-color: #3f88c5;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.vis-sub_div {
+  padding-left: 8%;
+}
+
+/*Proposal New Div for visitors*/
+
+.checkbox-wrapper-31:hover .check {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-31 {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.checkbox-wrapper-31 .background {
+  fill: #ccc;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 .stroke {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 .check {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke-dashoffset: 22;
+  stroke-dasharray: 22;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  -appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .background {
+  fill: #6cbe45;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .stroke {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .check {
+  stroke-dashoffset: 0;
+}
+/*okBtn-vislog*/
+.okBtn-vislog {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.okBtn-vislog:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.okBtn-vislog:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.okBtn-vislog:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}

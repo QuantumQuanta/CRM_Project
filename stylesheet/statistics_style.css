@@ -1,0 +1,80 @@
+.cardColor {
+  background: #85B3FF;
+}
+
+.statheading {
+  color: #455262 !important;
+  /* margin-left: 43% !important; */
+  text-align: center !important;
+}
+
+.tableheading {
+  color: #455262 !important;
+}
+
+#statTableDiv {
+  position: relative;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 15px !important;
+  color: #455262 !important;
+}
+#statTablebtnDiv{
+  position: relative;
+}
+
+/*for statTablediv*/
+.statTableClsBtn {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  color: transparent;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  left: 96%;
+  letter-spacing: 0.5px;
+  line-height: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 6px 6px 6px;;
+  position: absolute;
+  text-transform: uppercase;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  width: 100px;
+}
+
+.statTableClsBtn::before,
+.statTableClsBtn::after {
+  background-color: rgb(10, 146, 231);
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 141.4214px;
+  z-index: -1;
+}
+
+.statTableClsBtn::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.statTableClsBtn::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.statTableClsBtn:hover {
+  color: #ffffff;
+}
+
+.statTableClsBtn:hover::before,
+.statTableClsBtn:hover::after {
+  height: 25px;
+  transform: rotate(0deg);
+}

@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 346px;
+    height: 478px;
+    padding: 40px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom right, #fff, #f4f4f4);
+    /* add light gradient shade */
+    transition: box-shadow 0.3s ease-in-out;
+    /* add transition for box-shadow */
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(0, 0, 0, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.5);
+    /* add box-shadow for 3D effect */
+}
+
+.form-box:hover {
+    box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(0, 0, 0, 0.2),
+        inset 0 0 40px rgba(255, 255, 255, 0.7);
+    /* modify box-shadow on hover for more pronounced 3D effect */
+}
+
+.input-container {
+    display: flex;
+    /* add new property */
+    flex-direction: column;
+    align-items: center;
+    /* add new property */
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #0077be;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    transition: border-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    animation: inputAnimation 1s ease-in-out 0.5s forwards;
+    /* add new animation */
+}
+
+textarea {
+    border: none;
+    border-bottom: 2px solid #0077be;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    transition: border-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    animation: inputAnimation 1s ease-in-out 0.5s forwards;
+}
+
+button[type="submit"] {
+    font-size: 24px;
+    padding: 5px 41%;
+    background-image: linear-gradient(to bottom right, #0077be, #005ea7);
+    border: 2px solid #005ea7;
+    /* add a border */
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    /* transition: opacity 0.3s ease-in-out; */
+    animation: pulse 1s infinite;
+    -webkit-box-shadow: 0 5px 0 #005ea7;
+    box-shadow: 0 5px 0 #005ea7;
+    position: relative;
+    /* add relative positioning */
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+/* add a keyframe animation for the reload effect */
+@keyframes reload {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* style the reload icon */
+button[type="submit"]::after {
+    content: "\f01e";
+    /* Unicode character for "refresh" icon */
+    font-family: FontAwesome;
+    position: absolute;
+    /* position the icon absolutely within the button */
+    right: 7%;
+    /* move the icon to the right side of the button */
+    top: 22%;
+    /* vertically center the icon within the button */
+    transform: translateY(-50%);
+    /* vertically center the icon within the button */
+    opacity: 0;
+    /* make the icon initially invisible */
+}
+
+/* add a hover effect for the reload icon */
+button[type="submit"]:hover::after {
+    animation: reload 1s ease-in-out forwards;
+    /* animate the icon when hovered over */
+    opacity: 1;
+    /* make the icon visible */
+}
+
+
+.back-btn {
+    text-align: right;
+    margin-top: 15px;
+    padding: 10px 30px;
+}
+
+.back-btn a {
+    color: #151fea;
+    text-decoration: none;
+    font-size: 15px;
+    text-decoration-line: underline;
+    text-decoration-color: #cb7777;
+    text-decoration-thickness: 2px;
+}
+
+.back-btn:hover a {
+    color: #e51414;
+    text-decoration-color: #151fea;
+}
+
+/* .back-btn::before {
+    content: "\f060";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+} */
+
+/* button[type="submit"] {
+    margin-top: 20px;
+    box-shadow: none;
+    background-color: #0077be;
+    /* set background color to blue */
+/* color: #fff; */
+/* change font color to white */
+/* border: none;
+    border-radius: 5px;
+    padding: 10px 20%;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+} */
+
+@keyframes inputAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+    /* add opacity on hover */
+    box-shadow: 0 2px 0 #005ea7;
+    /* modify box-shadow on hover for 3D effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #0077be;
+    opacity: 0.8;
+    /* add opacity on hover */
+}
+
+input:focus {
+    border-color: #0077be;
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #0077be;
+    opacity: 1;
+    /* animation: placeHolderAnim 2s infinite ease-in-out; */
+}
+
+textarea::placeholder {
+    color: #0077be;
+    opacity: 1;
+    /* animation: placeHolderAnim 2s infinite ease-in-out; */
+}
+
+@keyframes placeHolderAnim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.bg-slider {
+    position: relative;
+}
+
+.slideshow {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slideshow li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: imageAnimation 25s linear infinite;
+}
+
+.slideshow li:nth-child(1) span {
+    background-image: url("../image/index_background/bg-1.jpg");
+    animation-delay: 6s;
+}
+
+.slideshow li:nth-child(2) span {
+    background-image: url("../image/index_background/bg-2.jpg");
+    animation-delay: 12s;
+}
+
+.slideshow li:nth-child(3) span {
+    background-image: url("../image/index_background/bg-3.jpg");
+    animation-delay: 18s;
+}
+
+.slideshow li:nth-child(4) span {
+    background-image: url("../image/index_background/bg-4.jpg");
+    animation-delay: 24s;
+}
+
+.slideshow li:nth-child(5) span {
+    background-image: url("../image/index_background/bg-5.jpg");
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8%,
+    17% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {}

@@ -1,0 +1,104 @@
+#contentMain {
+  transition: margin-left .5s;
+  min-width: 80% !important;
+  overflow-x: hidden;
+  margin-left: 49px;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  height: 100% !important;
+}
+
+#mySidebar {
+  height: 100% !important;
+  min-width: 49px !important;
+  width: 49px !important;
+  position: fixed;
+  z-index: -auto;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s !important;
+  padding-top: 10px;
+  white-space: nowrap;
+  color: black;
+  font-family: "Roboto","Arial",sans-serif !important;
+  background-image: linear-gradient(to bottom, #000000, #3333ff, #2ec4e2);
+  
+  
+
+  /* Gradient overlay */
+  /* &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; */
+    
+  /* } */
+}
+
+
+#mySidebar:hover {
+  min-width: 250px !important;
+  width: 250px !important;
+}
+
+.sidenav a {
+  padding: 17px 3px 3px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  /* white color */
+  display: block;
+  transition: 0.3s;
+  animation: fadeIn 500ms ease-out backwards; 
+  
+}
+.menu-title{
+  animation: fadeIn 500ms ease-out backwards; 
+}
+
+.sidenav a:hover {
+  color: #f6efef;
+  font-size: 18px;
+  text-shadow: 1.5px 0.7px 2px #a88282;
+  transition: 0.4s;
+}
+
+a .icons {
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 35px;
+  padding-left: 0;
+  width: 55%;
+}
+
+
+a #Envicon {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 13px 3px 3px 5px;
+}
+
+#contentBody {
+  padding-bottom: 20px;
+  width: 100%;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

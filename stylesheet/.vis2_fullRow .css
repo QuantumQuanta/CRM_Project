@@ -1,0 +1,162 @@
+.visitorlogInput {
+    width: 53%;
+    margin: auto;
+    margin-top: 2%;
+    background: wheat;
+    padding: 2%;
+    border-radius: 20px !important;
+    background: linear-gradient(to bottom right, rgba(210, 240, 243, 0.8), #2196F3);
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+    border: none;
+    opacity: 0.8;
+}
+
+.visitorlogInput2 {
+    height: auto;
+    width: 53%;
+    background-color: #233dc9c2;
+    background-image: linear-gradient(319deg, #118ab2 0%, #06d6a0 42%, #9666ffb5 100%);
+    margin: auto;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 20px !important;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+    border: none;
+    opacity: 0.8;
+}
+
+h4 {
+    margin: auto;
+    text-align: center;
+    padding-top: 0%;
+    font-size: 24px;
+    background: linear-gradient(to bottom, #000, #3333ffba, #14643e);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#visLogForm,
+#visLogForm2 {
+    width: 90%;
+    margin: auto;
+}
+
+.vis2_ID,
+.vis2_Name,
+.vis2_dates,
+.vis_row,
+.subCol1,
+.subRow1,
+.subRow2 {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.vis2_ID label {
+    width: 15%;
+}
+
+.vis2_ID input,
+.vis2_Name input {
+    display: block;
+    width: 85%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+
+.vis2_Name label {
+    width: 20%;
+}
+
+.vis2_Name input {
+    width: 80%;
+}
+
+.vis2_dates {
+    column-count: 2;
+    column-gap: 3%;
+}
+
+.dates_col {
+    width: 55%;
+    display: flex;
+}
+
+.dates_col label {
+    width: 45%;
+}
+
+.dates_col input {
+    width: 80%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+
+.vis2_Name label {
+    width: 20%;
+}
+
+.vis2_Name input {
+    width: 80%;
+}
+
+
+.vis_col1 {
+    width: 33%;
+}
+
+.vis_col2 {
+    width: 67%;
+    display: block;
+}
+
+
+
+
+.subCol2 label {
+    width: 30%;
+}
+
+.subCol2 input {
+    display: block;
+    width: 70%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+
+.subRow1 {
+    width: 100%;
+}
+
+.subRow2 {
+    width: 100%;
+}
+
+.subRow1 label {
+    width: auto;
+}
+
+.subRow1 select {
+    width: 60%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+
+.subRow2 select {
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    padding: 5px;
+}

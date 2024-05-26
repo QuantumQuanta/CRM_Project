@@ -1,0 +1,235 @@
+/* Main container styling */
+.creqModal {
+    display: none;
+    /* Hide modal by default */
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(91, 90, 90, 0.318);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Modal content styling */
+.creqModal-content {
+    background-color: #85B3FF;
+    /* background-image: url('../image/crm_icon/form_back_CREQ3.jpg'); */
+    /* background-size: cover; */
+    /* /* background-position: center; */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+
+}
+
+/* Close button styling */
+.creqModalclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Label styling */
+.CREQlbl {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.CREQlbl2 {
+    margin-top: 10px;
+}
+
+.CREQlbl3 {
+    margin-right: 5px;
+
+}
+
+.CREQlbl4 {
+    margin-right: 0px;
+}
+
+/* Input, select, and textarea styling */
+.form-ele input[type="text"],
+.form-ele input[type="date"],
+.form-ele textarea,
+.form-ele select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #655e5ee9;
+
+}
+
+/* Select styling */
+.form-ele select {
+    background-color: #fff;
+    color: #655e5ee9;
+
+}
+
+/* Label Styling*/
+/* Select styling */
+.form-ele label {
+    color: #fff;
+}
+
+/* Textarea styling */
+.form-ele textarea {
+    resize: vertical;
+
+}
+
+/* Radio button and checkbox styling */
+.form-subele input[type="radio"],
+.form-subele input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button styling */
+.form-submit input[type="submit"] {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: #357ae8;
+    /* Darker Google Blue */
+}
+
+#flexElementDiv1,
+#flexEditElementDiv1 {
+    display: flex;
+    justify-content: center;
+}
+
+.radioInp {
+    display: flex;
+    justify-content: space-between;
+    /* Optional: align items vertically in the center */
+}
+
+.CREQlbl3,
+.CREQlbl4 {
+    margin-top: 4.4%;
+    font-weight: bold;
+}
+
+/* #flexSubEle {
+    display: ruby;
+    margin-top: 4%;
+} */
+
+/* CSS */
+#cReqClientID,
+#cReqEditClientID {
+    display: inline-block;
+    --b: 3px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
+    --color: #ffffff;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #faf6f600;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#cReqClientID:hover,
+#cReqClientID:focus-visible,
+#cReqEditClientID:hover,
+#cReqEditClientID:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+#cReqClientID:active,
+#cReqEditClientID:active {
+    background: var(--color);
+    color: #fff;
+}
+
+
+/* Submit Btn CSS */
+
+#subBtnCREQ,
+#subBtnCREQEdit {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #9A9AA4;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+#subBtnCREQ:focus,
+#subBtnCREQEdit:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#subBtnCREQ:hover,
+#subBtnCREQEdit:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#subBtnCREQ:active,
+#subBtnCREQEdit:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}

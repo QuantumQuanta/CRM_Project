@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  /*remove extra margin,flex brings all element horizantally(his own property but ) next to eachother*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* display:flex; */
+  flex-direction: column;
+  align-items: center;
+
+  /*to make all contain fully center of the page we need to fixed the height of the page vh=100% of the viewport height*/
+  height: 100vh;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.clock {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background-color: blueviolet;
+  opacity: .5;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.926);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: .7;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  /* absolute :relative to the position of its first parent*/
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: green;
+  color: white;
+  opacity: .8;
+}
+

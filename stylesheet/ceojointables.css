@@ -1,0 +1,80 @@
+body{
+  width: 100%;
+}
+
+
+#offcanvas_tables2{
+  width: 90%;
+  margin: auto;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: auto;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+table #comment1{
+  width: 500px;
+}
+table #comment2{
+  width: 500px;
+}
+
+#SlNo, #BCR{
+  width: 35px;
+}
+#Resp-2, #Resp-3, #Resp-4{
+  width: 59px;  
+}
+#Verified{
+  width: 42px; 
+} 
+#PCR_pt{
+  width: 18px;
+}
+#PCR_Resp,#Client_Rat1,#Contacted_Us,#Call-Type{
+  width: 30px;
+}
+#PCR_prio,#PCR_ET{
+  width: 23px;
+}
+
+
+#ClientStatus-1{
+  width: 50px;
+}
+#KYC{
+  width: 12px;
+}
+#Call_Status{
+  width: 16px;
+}
+#DOA-1, #Contact, #DOA-2, #DOA-3,#DOA-4{
+  width: 70px;  
+}
+
+#DT_1{
+  width: 36px; 
+}

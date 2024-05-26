@@ -1,0 +1,296 @@
+.container-fluid {
+    height: 78%;
+}
+
+.loginDiv {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 5%;
+    background: white;
+    border: none;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-family: serif;
+    gap: 2%;
+    overflow: hidden;
+}
+
+.div_forImage {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px 0px 0px 13px;
+    overflow: hidden;
+}
+
+.div_forImage img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px 0px 0px 13px;
+}
+
+.imageText {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgba(41, 41, 41, 0.35);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+}
+
+#new_user_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: auto;
+}
+
+#newUserCreateForm {
+    padding: 5%;
+    margin: auto;
+    border: none;
+    border-radius: 13px;
+    font-family: serif;
+    overflow: auto;
+}
+
+.Name_div {
+    display: flex;
+    width: 100%;
+}
+
+.Name_div label {
+    width: 15%;
+    align-self: end;
+}
+
+.user_name_div {
+    width: 85%;
+    display: flex;
+    gap: 5%;
+}
+
+.user_desg_div,
+.UniName_pass,
+.mob_emailDiv,
+.user_pic_div {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    margin-top: 1.5%;
+}
+
+.user_desg_div label,
+.user_pic_div label {
+    width: 30%;
+    align-self: end;
+}
+
+.user_desg_div select {
+    width: 70%;
+}
+
+.UniName_pass,
+.mob_emailDiv {
+    gap: 5% !important;
+}
+
+.user_unqname_div,
+.user_contact_div,
+.user_pass_div,
+.usermail_div {
+    width: 50%;
+}
+
+.user_unqname_div input,
+.user_contact_div input,
+.user_pass_div input,
+.usermail_div input {
+    margin-top: 3%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background: #e2e8e75c;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.user_submit_div {
+    width: 100%;
+    text-align: center;
+}
+
+#nuSubBtn {
+    width: 100%;
+    background: linear-gradient(to bottom right, #2196F3, #0D47A1) !important;
+    padding: 10px !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#nuSubBtn:hover {
+    background: linear-gradient(to bottom right, #0D47A1, #2196F3) !important;
+}
+
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    margin-bottom: 0
+}
+
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    margin: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.custom-file-input:focus~.custom-file-label {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -24px;
+    z-index: 1;
+    height: calc(1.5em + .75rem + 2px);
+    padding: -0.625rem 6.75rem;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 2.3;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding-left: 5%;
+}
+
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(1.5em + .75rem);
+    padding: 0.375rem 1.75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: inherit;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+#custom_file {
+    width: 70%;
+}
+
+#custom_file label {
+    width: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Name_div,
+    .user_name_div,
+    .user_desg_div,
+    .UniName_pass,
+    .mob_emailDiv,
+    .user_pic_div,
+    .user_submit_div,
+    .custom-file,
+    #custom_file {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Name_div label,
+    .user_desg_div label,
+    .user_pic_div label {
+        width: 100%;
+    }
+
+    .user_unqname_div,
+    .user_contact_div,
+    .user_pass_div,
+    .usermail_div,
+    .custom-file-label {
+        width: 100%;
+    }
+
+    .loginDiv {
+        display: block;
+        height: auto;
+
+    }
+
+    .div_forImage {
+        width: 100%;
+    }
+
+    #new_user_div {
+        width: 100%;
+    }
+
+    .div_forImage {
+        width: 100%;
+        border-radius: 13px 13px 0px 0px;
+    }
+
+    #newUserCreateForm {
+        width: 100%;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .imageText {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        background-color: rgba(41, 41, 41, 0.35);
+        text-align: center;
+        width: 80%;
+        font-size: small;
+    }
+}
+::-moz-focus-outer {
+    outline: none;
+  }
+  :focus {
+    outline: none;
+  }

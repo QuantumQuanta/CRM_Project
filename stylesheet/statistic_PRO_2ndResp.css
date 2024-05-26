@@ -1,0 +1,543 @@
+/*For PRO Page*/
+/*For 1st DD*/
+/* Hide the sub-dropdown by default */
+#pro_sub-dropdown1 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#pro_dropdown1 li {
+    list-style-type: none;
+}
+
+#pro_dd_ul1 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#pro_dropdown1:hover #pro_sub-dropdown1 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#pro_sub-dropdown1 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#pro_sub-dropdown1 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#pro_sub-dropdown1 li a:hover {
+    background-color: #85B3FF;
+}
+
+/*For 2nd DD*/
+/* Hide the sub-dropdown by default */
+#pro_sub-dropdown2 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#pro_dropdown2 li {
+    list-style-type: none;
+}
+
+#pro_dd_ul2 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#pro_dropdown2:hover #pro_sub-dropdown2 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#pro_sub-dropdown2 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#pro_sub-dropdown2 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#pro_sub-dropdown2 li a:hover {
+    background-color: #85B3FF;
+}
+
+/*For 3rd DD*/
+/* Hide the sub-dropdown by default */
+#pro_sub-dropdown3 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#pro_dropdown3 li {
+    list-style-type: none;
+}
+
+#pro_dd_ul3 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#pro_dropdown3:hover #pro_sub-dropdown3 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#pro_sub-dropdown3 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#pro_sub-dropdown3 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#pro_sub-dropdown3 li a:hover {
+    background-color: #85B3FF;
+}
+
+
+/*For 4th DD*/
+/* Hide the sub-dropdown by default */
+#pro_sub-dropdown4 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#pro_dropdown4 li {
+    list-style-type: none;
+}
+
+#pro_dd_ul4 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#pro_dropdown4:hover #pro_sub-dropdown4 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#pro_sub-dropdown4 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#pro_sub-dropdown4 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#pro_sub-dropdown4 li a:hover {
+    background-color: #85B3FF;
+}
+
+
+/*For 5th DD*/
+/* Hide the sub-dropdown by default */
+#pro_sub-dropdown5 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+#pro_dropdown5 li {
+    list-style-type: none;
+}
+
+#pro_dd_ul5 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#pro_dropdown5:hover #pro_sub-dropdown5 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#pro_sub-dropdown5 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#pro_sub-dropdown5 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#pro_sub-dropdown5 li a:hover {
+    background-color: #85B3FF;
+}
+
+
+
+/*For 2NDRESP Page*/
+/*For 1st DD*/
+/* Hide the sub-dropdown by default */
+#sub-dropdown1 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#dropdown1 li {
+    list-style-type: none;
+}
+
+#dd_ul1 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#dropdown1:hover #sub-dropdown1 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#sub-dropdown1 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#sub-dropdown1 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#sub-dropdown1 li a:hover {
+    background-color: #85B3FF;
+}
+
+/*For 2nd DD*/
+/* Hide the sub-dropdown by default */
+#sub-dropdown2 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#dropdown2 li {
+    list-style-type: none;
+}
+
+#dd_ul2 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#dropdown2:hover #sub-dropdown2 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#sub-dropdown2 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#sub-dropdown2 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#sub-dropdown2 li a:hover {
+    background-color: #85B3FF;
+}
+
+/*For 3rd DD*/
+/* Hide the sub-dropdown by default */
+#sub-dropdown3 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#dropdown3 li {
+    list-style-type: none;
+}
+
+#dd_ul3 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#dropdown3:hover #sub-dropdown3 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#sub-dropdown3 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#sub-dropdown3 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#sub-dropdown3 li a:hover {
+    background-color: #85B3FF;
+}
+
+
+/*For 4th DD*/
+/* Hide the sub-dropdown by default */
+#sub-dropdown4 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    width: 90px;
+}
+
+#dropdown4 li {
+    list-style-type: none;
+}
+
+#dd_ul4 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#dropdown4:hover #sub-dropdown4 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+/* Style for the list items inside the dropdown */
+#sub-dropdown4 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#sub-dropdown4 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#sub-dropdown4 li a:hover {
+    background-color: #85B3FF;
+}
+
+
+/*For 5th DD*/
+/* Hide the sub-dropdown by default */
+#sub-dropdown5 {
+    display: none;
+    position: absolute;
+    /* Position the dropdown absolutely */
+    background-color: #85B3FF;
+    /* Background color for the dropdown */
+    border: 1px solid #ffffff;
+    /* Border for the dropdown */
+    z-index: 9999;
+    opacity: 0;
+    /* Initially, set opacity to 0 for the fade-in effect */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+#dropdown5 li {
+    list-style-type: none;
+}
+
+#dd_ul5 {
+    list-style-type: none;
+}
+
+/* Style for the parent li element */
+#dropdown5:hover #sub-dropdown5 {
+    display: block;
+    /* Show the dropdown when the parent li is hovered */
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+}
+
+
+
+/* Style for the list items inside the dropdown */
+#sub-dropdown5 li {
+    padding: 5px;
+
+}
+
+/* Optional: Style the links inside the dropdown */
+#sub-dropdown5 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Optional: Style for the dropdown when a link is hovered */
+#sub-dropdown5 li a:hover {
+    background-color: #85B3FF;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+/*for 2resp table*/
+#statDataDisTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-y: scroll;
+  /* color: #455262 !important; */
+}
+
+#statDataDisTable td,
+#statDataDisTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+
+}
+
+#statDataDisTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#statDataDisTable tr:hover {
+  background-color: #ddd;
+}
+
+#statDataDisTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 501 !important;
+  text-align: center;
+  background-color: #1d62a2f8;
+  color: whitesmoke !important;
+}
+

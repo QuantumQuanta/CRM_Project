@@ -1,0 +1,222 @@
+.container {
+    width: 100%;
+    height: 80%;
+    margin-top: 1%;
+}
+
+.noteRow {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.noteCol1 {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.noteCol2 {
+    width: 32%;
+    height: 90%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.note_headDiv {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    margin-top: -4%;
+}
+
+.noteCol2 img {
+    width: 35px;
+    height: 35px;
+    align-items: center;
+}
+
+.card,.formNote_card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 1rem;
+    height: 80%;
+    width: 99%;
+    overflow: auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .20);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.formNote_card {
+    padding-bottom: 4%;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    margin-top: 0%;
+}
+
+.form-control {
+    max-width: 98%;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+#addTxt {
+    height: 230px;
+}
+
+#addTitle {
+    height: 30px;
+}
+
+
+#addBtn {
+    float: right;
+    margin-top: 4%;
+    width: 32%;
+    height: 11%;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #2196F3, #0D47A1);
+    color: #fff;
+    border: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#addBtn:hover {
+    background: linear-gradient(to bottom right, #0D47A1, #2196F3);
+}
+
+#createNoteBtn {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #2196F3, #0D47A1);
+    color: #fff;
+    border: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    font-size: x-large;
+    /* font-weight: bold; */
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    /* Add a transition for the transform property */
+    cursor: pointer;
+}
+
+#createNoteBtn:hover {
+    background: linear-gradient(to bottom right, #0D47A1, #2196F3);
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    gap: 10px;
+}
+
+.noteCard {
+    width: 16.9rem !important;
+    border-radius: 20px;
+    background: #f8f8f8a3;
+    border: none;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+
+}
+
+.card-text {
+    /* let the text wrap preserving spaces */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    white-space: pre-wrap;
+    width: 100%;
+}
+
+.noteCard-title {
+    margin-bottom: .75rem;
+    margin-top: -5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#020c6d, #706036);
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: #181858;
+}
+
+.noteCardDate {
+    /* float: right; */
+    margin-top: -4%;
+    font-size: 10px;
+}
+
+.noteCard a {
+    border: none;
+    background: transparent;
+}
+
+.noteCard img {
+    width: 20px;
+    height: 20px;
+}
+
+.noteCard img:hover {
+    content: url('../image/delete_red.png');
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}

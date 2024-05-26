@@ -1,0 +1,11 @@
+#login_container {
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 10%;
+    width: 100%;
+    max-width: 450px;
+}
+
+#login_card{
+    background-color: linear-gradient(to right, #000428, #ef629f);
+}

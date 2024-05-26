@@ -1,0 +1,22 @@
+.text-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    transition: right 0.2s;
+}
+/*#password_icon {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    transition: right 0.2s;
+}*/
+
+.show {
+    left: 5px;
+}

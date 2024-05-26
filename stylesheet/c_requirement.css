@@ -1,0 +1,183 @@
+/* Style for the modal container */
+#respCREQDiv {
+    max-height: 90vh;
+}
+
+/* Style for the modal content */
+#respCREQFormDiv {
+    background-color: #85B3FF;
+    margin-left: 18%;
+    padding: 20px;
+    width: 80%;
+    max-width: 60%;
+    max-height: 70vh;
+    position: absolute;
+    border-radius: 15px;
+    opacity: 70%;
+
+}
+
+.form-row {
+    display: flex;
+
+    /* Use flexbox to align items in a row */
+    justify-content: center;
+    /*Optional: Adjust the spacing between elements */
+}
+
+.form-row2 {
+    justify-content: center;
+    display: flex;
+
+}
+
+.form-group {
+    margin-right: 21%;
+    /*Optional: Adjust the spacing between form groups*/
+}
+
+.form-group2 {
+    margin-left: 3%;
+    padding: 1%;
+}
+
+.form-group3 {
+    margin-right: 17%;
+    margin-left: 1%;
+}
+
+.form-group4 {
+    margin-right: 15.2%;
+    margin-top: 1%;
+    align-items: end;
+    margin-left: -124px;
+
+}
+
+.form-group5 {
+    margin-left: 2%;
+    display: block;
+    margin-top: 8px;
+    margin-right: 22.2%;
+}
+
+.form-group6 {
+    margin-left: 1%;
+    padding-left: 12%;
+}
+
+.form-group7 {
+    margin-left: 32%;
+}
+
+/* #prioritySel, */
+/* #proposalSharedOn, */
+#proposalDetails,
+
+/* #proposalSite, */
+/*  */
+/* #quote, */
+/* #currency, */
+/* #verifiedYes,
+#verifiedNo, */
+/* #verifiedBy, */
+/* #furtherAssignedTo,*/
+#fsaDetails {
+    width: 80%;
+    padding: 6px;
+    margin-bottom: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 82px;
+}
+
+#proposalState {
+    width: 80%;
+}
+
+/* Style for the close button */
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.CREQlbl {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.CREQlbl2 {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-left: 82px;
+}
+
+.CREQlbl3 {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.CREQlbl4 {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/*Priority*/
+#prioritySel{
+    width: 117%;
+}
+/*Further Assigned To*/
+#furtherAssignedTo{
+    width: 86%;
+}
+/* Optional: Style for the selected option*/
+#prioritySel option {
+    font-weight: normal;
+}
+
+
+/* Submit button for the form of 2nd Resp */
+#subBtnCREQ {
+    background-image: linear-gradient(-180deg, #0d8acd 0%, #0d8acd 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    width: 50%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+@media (min-width: 768px) {
+    #subBtnCREQ {
+        padding: 1rem 2rem;
+    }
+}
+
+/*Client Unique Id*/
+#clientHeading {
+
+    margin-top: 0% !important;
+    text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+    opacity: 75%;
+    margin: 2%;
+}

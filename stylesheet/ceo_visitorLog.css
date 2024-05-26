@@ -1,0 +1,269 @@
+#contentBody {
+  margin: auto;
+}
+
+.vistable1_div {
+  width: 100%;
+  margin: auto;
+  height: 25%;
+  overflow: auto;
+  margin-top: 1%;
+}
+
+.vistable1_div table {
+  border-collapse: collapse;
+  width: 60%;
+  font-family: Verdana;
+  font-size: 14px;
+  margin: auto;
+  background: #80808030;
+
+}
+
+td,
+th {
+  padding: 13px;
+  text-align: center;
+  margin: 0;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: #3a376b;
+  color: white;
+  border: none;
+  border-top: 2px solid white;
+}
+
+.vistlogTableOuterContainer {
+  height: 48%;
+}
+
+
+.visitorlogTable {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  overflow: auto;
+  margin-top: 0.5%;
+  margin-bottom: 3%;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.visitorlogTable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+.visitorlogTable::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background: #26537a99;
+}
+.visitorlogTable table {
+  background: #80808030;
+}
+
+.visitorlogTable table {
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+  border-collapse: collapse;
+}
+
+.visitorlogTable td,
+.visitorlogTable th {
+  border: 2px solid rgb(159 160 184);
+  padding: 10px 5px !important;
+}
+
+.visitorlogTable th {
+  position: sticky;
+  top: 0;
+  background: #3a376b;
+  color: white;
+  padding: 4px;
+  width: 200px;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+
+#visId_no {
+  width: 95px !important;
+}
+
+#visName,
+#asso_name {
+  width: 150px !important;
+}
+
+#fillBy {
+  width: 80px !important;
+}
+
+#fill_DT {
+  width: 80px !important;
+}
+
+#exp_DT,
+#actual_DT {
+  width: 122px !important;
+}
+
+.exp_DT,
+.actual_DT {
+  word-break: break-all;
+}
+
+#meet {
+  width: 80px !important;
+}
+
+#meet_room {
+  width: 120px !important;
+}
+
+#visId,
+#assoId {
+  width: 270px !important;
+}
+
+#KYC {
+  width: 35px !important;
+}
+
+#Email {
+  width: 150px !important;
+}
+
+
+.Comments,
+.visName,
+.fillBy,
+.asso_name,
+.visId,
+.assoId,
+.Add,
+.Email,
+.Comments {
+  text-align: left !important;
+}
+
+
+#visHide_dropbtn {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #3a376b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  width: 101px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 5px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: bolder;
+}
+
+#visHide_dropbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+#visHide_dropbtn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+#visHide_dropbtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#visHide_dropbtn:hover span {
+  padding-right: 25px;
+}
+
+#visHide_dropbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.hide_dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 80px;
+  /* margin-bottom: -10px; */
+}
+
+.hide_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f2ff;
+  min-width: 210px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  height: 214px;
+  /* margin-right: 123px; */
+  margin-left: -105px;
+  border-radius: 8px;
+  margin-top: 7px;
+}
+
+.hide_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  font-size: 15px;
+  text-align: left;
+}
+
+.hide_dropdown-content button {
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.hide_dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.blue-button {
+  /* background-color: #0c3d6f !important; */
+  color: #ffffff !important;
+  background-color: #2f82db !important;
+  /* color: white; */
+  border-radius: 2px;
+  border: none;
+  padding: 3px;
+  padding-left: 8px;
+}
+
+.tgl_btn_name {
+  width: 15px;
+  height: 15px;
+}
+
+.hidden {
+  display: none;
+}

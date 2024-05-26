@@ -1,0 +1,232 @@
+body {
+    /* margin-top: 20px; */
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;
+    overflow-y: scroll;
+}
+
+.main-body {
+    padding: 15px;
+    margin-top: 1%;
+}
+
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col,
+.gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 17px !important;
+    color: #455262 !important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+.head-nav {
+    height: 5.1% !important;
+}
+
+#passReset {
+    background-color: #85B3FF !important;
+    height: 40%;
+    width: 100%;
+    border-radius: 2%;
+    text-align: center;
+    align-items: center;
+
+}
+#passResetHeadDiv{
+  text-align: center;
+}
+
+#passResetHeadDiv h3 {
+    color: #ffffff;
+    display: inline-block;
+    padding: 1%;
+}
+#passResetHeadDiv a{
+  display: inline-block;
+}
+
+#passReset label {
+    color: #ffffff
+}
+
+#prePass,
+#newPass,
+#cnewPass {
+
+    box-shadow: inset #ffffff 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 95%;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    transition: all .2s ease;
+
+    :hover {
+        box-shadow: 0 0 0 0 #c4c1c1 inset, #1de9b6 0 0 0 2px;
+    }
+
+    :focus {
+        background: #969393;
+        outline: 0;
+        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+    }
+
+}
+
+
+
+/* CSS */
+.passSubBtn-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.passSubBtn-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.passSubBtn-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(0, 100%, 0%) 0%,
+    hsl(208, 97%, 15%) 8%,
+    hsl(0, 100%, 0%) 0%,
+    hsl(208, 97%, 15%) 8%,
+  );
+}
+
+.passSubBtn-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(212, 100%, 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .passSubBtn-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.passSubBtn-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.passSubBtn-pushable:hover .passSubBtn-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.passSubBtn-pushable:active .passSubBtn-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.passSubBtn-pushable:hover .passSubBtn-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.passSubBtn-pushable:active .passSubBtn-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.passSubBtn-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
